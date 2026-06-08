@@ -11,7 +11,6 @@ export default function Expertise() {
       description: "Designing structured, secure gateways that communicate smoothly with frontend clients and third-party integrations.",
       skills: [
         "RESTful Web API Design",
-        "NestJS & Express Gateways",
         "OAuth2 & JWT Authentication",
         "API Rate Limiting & Middleware",
         "WebSocket Real-time Channels",
@@ -37,7 +36,6 @@ export default function Expertise() {
       description: "Managing host infrastructure, automating build deployments, and ensuring server security and configuration.",
       skills: [
         "Docker Containerization",
-        "AWS ECS, EC2 & RDS Systems",
         "Nginx Reverse Proxy & Load Balancers",
         "Linux Shell & Server Configs",
         "CI/CD GitHub Actions",

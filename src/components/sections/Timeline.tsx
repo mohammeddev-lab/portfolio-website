@@ -17,9 +17,9 @@ export default function Timeline() {
       company: "StadiumBooking & Sports Inc.",
       period: "Aug 2024 - Present",
       bullets: [
-        "Architected the transactional NestJS seat booking service, reducing seat lock timeouts to sub-200ms.",
-        "Engineered the Redis-based Redlock concurrency blocker to completely prevent ticket overbooking.",
-        "Implemented multi-tenant resource isolation schemas dynamically resolved by NestJS HTTP middleware.",
+        "Architected high-performance transactional seat booking services, reducing seat lock timeouts to sub-200ms.",
+        "Engineered database pessimistic locks and custom queuing mechanisms to completely prevent ticket overbooking.",
+        "Implemented multi-tenant resource isolation schemas dynamically resolved by HTTP routing middleware.",
       ],
     },
     {
@@ -27,7 +27,7 @@ export default function Timeline() {
       company: "DevCore Systems",
       period: "Jan 2022 - July 2024",
       bullets: [
-        "Designed and maintained REST and WebSocket APIs in Laravel and ExpressJS.",
+        "Designed and maintained REST and WebSocket APIs in Laravel and PHP.",
         "Tuned database queries and normalizations in PostgreSQL, achieving a 35% speedup in reports queries.",
         "Configured Nginx reverse proxy routing and containerized application hosts using Docker.",
       ],

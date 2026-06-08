@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 // Import custom components
 import CustomCursor from "@/components/CustomCursor";
 import BubbleMenu from "@/components/BubbleMenu";
+import ScrollToTop from "@/components/ScrollToTop";
 
 // Import sections
 import Hero from "@/components/sections/Hero";
@@ -92,6 +93,9 @@ export default function Home() {
 
       {/* Floating Header (Bubble Menu & Theme Switcher) */}
       <BubbleMenu />
+
+      {/* Floating Scroll to Top Button */}
+      <ScrollToTop />
 
       {/* Sections Wrapper */}
       <div className="relative z-10 w-full flex flex-col items-center">

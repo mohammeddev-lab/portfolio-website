@@ -16,25 +16,25 @@ export default function Services() {
       num: "01",
       icon: <Code2 className="w-10 h-10 text-indigo-500" />,
       title: "API Engineering & Integration",
-      desc: "Creating secure, rate-limited RESTful and GraphQL APIs using NestJS and Express, fully documented with Swagger for seamless client consumption.",
+      desc: "Creating secure, rate-limited RESTful APIs using Laravel and PHP, fully documented with Swagger for seamless client consumption.",
     },
     {
       num: "02",
       icon: <Cpu className="w-10 h-10 text-emerald-500" />,
       title: "Microservices & System Design",
-      desc: "Architecting decoupled systems using message brokers (Redis, RabbitMQ) and event-driven patterns to guarantee reliable async processing.",
+      desc: "Architecting decoupled systems using message brokers (RabbitMQ) and event-driven patterns to guarantee reliable async processing.",
     },
     {
       num: "03",
       icon: <Zap className="w-10 h-10 text-sky-500" />,
       title: "Database Performance Tuning",
-      desc: "Analyzing SQL queries, refining indexing strategies, setting up replicas, and configuring Redis caching to achieve sub-millisecond latencies.",
+      desc: "Analyzing SQL queries, refining indexing strategies, setting up replicas, and configuring caching systems to achieve sub-millisecond latencies.",
     },
     {
       num: "04",
       icon: <Settings className="w-10 h-10 text-orange-500" />,
       title: "DevOps & Cloud Orchestration",
-      desc: "Dockerizing environments, automating deployments via CI/CD, configuring Nginx proxies, and provisioning AWS resources (EC2, ECS, RDS).",
+      desc: "Dockerizing environments, automating deployments via CI/CD, configuring Nginx proxies, and provisioning VPS and cloud hosting servers.",
     },
   ];
 

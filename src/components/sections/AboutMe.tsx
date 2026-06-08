@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 export default function AboutMe() {
   const stats = [
-    { value: "99.99%", label: "Target System Uptime" },
-    { value: "50M+", label: "API Requests Processed Daily" },
-    { value: "50+", label: "Microservices Managed" },
-    { value: "5+", label: "Years Engineering Backend Code" },
+    { value: "99.9%", label: "Target System Uptime" },
+    { value: "10M+", label: "API Requests Processed Daily" },
+    { value: "15+", label: "Microservices Managed" },
+    { value: "3+", label: "Years Engineering Backend Code" },
   ];
 
   return (

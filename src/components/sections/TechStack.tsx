@@ -104,9 +104,6 @@ export default function TechStack() {
       items: [
         { icon: Icons.laravel, name: "Laravel" },
         { icon: Icons.php, name: "PHP" },
-        { icon: Icons.nodejs, name: "Node.js" },
-        { icon: Icons.nestjs, name: "NestJS" },
-        { icon: Icons.expressjs, name: "Express.js" },
       ],
     },
     {
@@ -114,14 +111,12 @@ export default function TechStack() {
       items: [
         { icon: Icons.postgresql, name: "PostgreSQL" },
         { icon: Icons.mysql, name: "MySQL" },
-        { icon: Icons.redis, name: "Redis" },
       ],
     },
     {
       category: "Infrastructure & Host",
       items: [
         { icon: Icons.docker, name: "Docker" },
-        { icon: Icons.aws, name: "AWS" },
         { icon: Icons.nginx, name: "Nginx" },
         { icon: Icons.linux, name: "Linux" },
       ],

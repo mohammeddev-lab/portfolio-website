@@ -40,7 +40,7 @@ export default function Projects() {
         "Automated attendance tracking, certificate generation, notifications system, and financial reporting.",
         "Integrated conversational AI Assistant providing contextual user guidance, intelligent data analysis, and administrative recommendations."
       ],
-      github: "https://github.com/Mohammed-Fares/cec-management-system",
+      github: "https://github.com/mohammeddev-lab/cec-management-system",
       docs: "https://mohammedfares.dev/docs/cec-management-system",
       diagram: (
         <div className="w-full h-full min-h-[200px] flex items-center justify-center bg-zinc-950/40 rounded-xl border border-border/80 p-6 relative overflow-hidden group">
@@ -96,13 +96,13 @@ export default function Projects() {
     {
       title: "Stadium Booking Platform",
       desc: "A high-concurrency seat reservation system built to manage heavy transactional spikes during ticket releases, ensuring zero double-bookings.",
-      tags: ["NestJS", "PostgreSQL", "Redis", "Docker", "AWS"],
+      tags: ["Laravel", "PHP", "PostgreSQL", "Docker", "Nginx"],
       features: [
-        "Distributed lock mechanism with Redis (Redlock) to prevent race conditions during seat selection.",
+        "Distributed lock mechanism with database pessimistic locking to prevent race conditions during seat selection.",
         "DB transaction isolation (Serializable) to guarantee data integrity.",
         "Load tested to scale smoothly up to 15,000 requests/sec with minimal response latencies.",
       ],
-      github: "https://github.com/Mohammed-Fares/stadium-booking",
+      github: "https://github.com/mohammeddev-lab/stadium-booking",
       docs: "https://mohammedfares.dev/docs/stadium-booking",
       diagram: (
         <div className="w-full h-full min-h-[200px] flex items-center justify-center bg-zinc-950/40 rounded-xl border border-border/80 p-6 relative overflow-hidden group">
@@ -132,14 +132,14 @@ export default function Projects() {
             <rect x="5" y="30" width="10" height="20" rx="3" fill="#18181b" stroke="rgba(255,255,255,0.1)" />
             <text x="10" y="42" fill="#a1a1aa" fontSize="4" textAnchor="middle">Client</text>
 
-            <rect x="30" y="25" width="20" height="30" rx="4" fill="#1e1b4b" stroke="#4f46e5" strokeWidth="1" />
-            <text x="40" y="37" fill="#e0e7ff" fontSize="4" fontWeight="bold" textAnchor="middle">NestJS</text>
-            <text x="40" y="45" fill="#818cf8" fontSize="3" textAnchor="middle">API Node</text>
+            <rect x="30" y="25" width="20" height="30" rx="4" fill="#2d0b0b" stroke="#f43f5e" strokeWidth="1" />
+            <text x="40" y="37" fill="#ffe4e6" fontSize="4" fontWeight="bold" textAnchor="middle">Laravel</text>
+            <text x="40" y="45" fill="#fda4af" fontSize="3" textAnchor="middle">API Node</text>
 
-            {/* Redis Lock node */}
-            <rect x="65" y="10" width="20" height="20" rx="4" fill="#450a0a" stroke="#dc2626" strokeWidth="1" />
-            <text x="75" y="20" fill="#fecaca" fontSize="4" fontWeight="bold" textAnchor="middle">Redis</text>
-            <text x="75" y="26" fill="#f87171" fontSize="3" textAnchor="middle">Locks</text>
+            {/* DB Lock node */}
+            <rect x="65" y="10" width="20" height="20" rx="4" fill="#1c1917" stroke="#ea580c" strokeWidth="1" />
+            <text x="75" y="20" fill="#ffedd5" fontSize="4" fontWeight="bold" textAnchor="middle">DB Lock</text>
+            <text x="75" y="26" fill="#fdba74" fontSize="3" textAnchor="middle">Queues</text>
 
             {/* DB Node */}
             <rect x="65" y="50" width="20" height="20" rx="4" fill="#062f4f" stroke="#0ea5e9" strokeWidth="1" />
@@ -147,7 +147,7 @@ export default function Projects() {
             <text x="75" y="66" fill="#38bdf8" fontSize="3" textAnchor="middle">DB Tx</text>
           </svg>
           <div className="absolute top-3 right-3 text-[10px] font-mono text-muted-foreground flex items-center gap-1.5 bg-card/60 px-2 py-1 rounded border border-border">
-            <Lock className="w-3 h-3 text-red-400" /> Redlock Active
+            <Lock className="w-3 h-3 text-red-400" /> Locking Active
           </div>
         </div>
       ),
@@ -161,7 +161,7 @@ export default function Projects() {
         "Match scheduling calculation engine using custom graph traversal pathing algorithms.",
         "Role-Based Access Control (RBAC) supporting complex manager, coach, and athlete scopes.",
       ],
-      github: "https://github.com/Mohammed-Fares/sports-management-saas",
+      github: "https://github.com/mohammeddev-lab/sports-management-saas",
       diagram: (
         <div className="w-full h-full min-h-[200px] flex items-center justify-center bg-zinc-950/40 rounded-xl border border-border/80 p-6 relative overflow-hidden group">
           {/* Tenant Isolation Diagram */}
@@ -204,64 +204,17 @@ export default function Projects() {
         </div>
       ),
     },
-    {
-      title: "Multi-Tenant Reservation System",
-      desc: "A highly customizable reservation api that guarantees storage isolation, dynamic schemas, and custom webhooks for business tenants.",
-      tags: ["NestJS", "PostgreSQL", "Redis", "Nginx", "Linux"],
-      features: [
-        "Dynamic PostgreSQL schema switching based on active tenant identification hooks.",
-        "Integrated message queue using Redis BullMQ to dispatch tenant webhooks asynchronously.",
-        "Nginx reverse proxy routing configured to distribute request loads securely.",
-      ],
-      github: "https://github.com/Mohammed-Fares/reservation-system",
-      diagram: (
-        <div className="w-full h-full min-h-[200px] flex items-center justify-center bg-zinc-950/40 rounded-xl border border-border/80 p-6 relative overflow-hidden group">
-          {/* Multi tenant DB isolation */}
-          <svg className="w-full h-full max-w-[280px]" viewBox="0 0 100 80" fill="none">
-            {/* Paths */}
-            <motion.path d="M10 40h20" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
-            <motion.path d="M50 40l15-15" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
-            <motion.path d="M50 40l15 15" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
 
-            <motion.circle r="1" fill="#e879f9"
-              animate={{ cx: [50, 65], cy: [40, 25] }}
-              transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
-            />
-
-            {/* Gateway */}
-            <rect x="5" y="30" width="12" height="20" rx="3" fill="#111827" stroke="#9ca3af" />
-            <text x="11" y="42" fill="#d1d5db" fontSize="3.5" textAnchor="middle">Nginx</text>
-
-            <rect x="30" y="25" width="20" height="30" rx="4" fill="#1e1b4b" stroke="#4f46e5" />
-            <text x="40" y="38" fill="#e0e7ff" fontSize="4" fontWeight="bold" textAnchor="middle">NestJS</text>
-            <text x="40" y="44" fill="#a5b4fc" fontSize="3" textAnchor="middle">DB Selector</text>
-
-            {/* Schema 1 */}
-            <rect x="65" y="10" width="22" height="20" rx="4" fill="#1c1917" stroke="#f59e0b" />
-            <text x="76" y="20" fill="#fef3c7" fontSize="3" fontWeight="bold" textAnchor="middle">Schema A</text>
-            <text x="76" y="26" fill="#fbbf24" fontSize="2.5" textAnchor="middle">Tenant 1</text>
-
-            {/* Schema 2 */}
-            <rect x="65" y="50" width="22" height="20" rx="4" fill="#1c1917" stroke="#10b981" />
-            <text x="76" y="60" fill="#ecfdf5" fontSize="3" fontWeight="bold" textAnchor="middle">Schema B</text>
-            <text x="76" y="66" fill="#34d399" fontSize="2.5" textAnchor="middle">Tenant 2</text>
-          </svg>
-          <div className="absolute top-3 right-3 text-[10px] font-mono text-muted-foreground flex items-center gap-1.5 bg-card/60 px-2 py-1 rounded border border-border">
-            <Database className="w-3 h-3 text-emerald-400" /> Multi-Schema
-          </div>
-        </div>
-      ),
-    },
     {
       title: "Stress Detection Backend API",
       desc: "A real-time analytics backend that consumes biometric telemetry data and evaluates physiological stress states.",
-      tags: ["Node.js", "Express.js", "Redis", "Linux", "Swagger"],
+      tags: ["Laravel", "PHP", "MySQL", "Linux", "Swagger"],
       features: [
         "WebSocket server gateway managing persistent connections and real-time telemetry streaming.",
-        "Integrated Redis pub/sub queue that pipes telemetry data to background ML analysis scripts.",
+        "Integrated pipeline and worker queue that pipes telemetry data to background ML analysis scripts.",
         "Guaranteed message throughput exceeding 200,000 telemetry packets per minute.",
       ],
-      github: "https://github.com/Mohammed-Fares/stress-detection-api",
+      github: "https://github.com/mohammeddev-lab/stress-detection-api",
       diagram: (
         <div className="w-full h-full min-h-[200px] flex items-center justify-center bg-zinc-950/40 rounded-xl border border-border/80 p-6 relative overflow-hidden group">
           {/* WebSocket telemetry flow */}
@@ -284,21 +237,21 @@ export default function Projects() {
             <rect x="5" y="30" width="12" height="20" rx="3" fill="#18181b" stroke="#e11d48" />
             <text x="11" y="41" fill="#fecdd3" fontSize="3" textAnchor="middle">WS Client</text>
 
-            <rect x="30" y="25" width="20" height="30" rx="4" fill="#0f172a" stroke="#3b82f6" />
-            <text x="40" y="38" fill="#dbeafe" fontSize="3.5" fontWeight="bold" textAnchor="middle">Express</text>
-            <text x="40" y="44" fill="#93c5fd" fontSize="2.5" textAnchor="middle">WS Gateway</text>
+            <rect x="30" y="25" width="20" height="30" rx="4" fill="#2d0b0b" stroke="#ea580c" />
+            <text x="40" y="38" fill="#ffedd5" fontSize="3.5" fontWeight="bold" textAnchor="middle">Laravel</text>
+            <text x="40" y="44" fill="#fdba74" fontSize="2.5" textAnchor="middle">WS Gateway</text>
 
-            {/* Redis Queue */}
-            <rect x="65" y="25" width="15" height="30" rx="4" fill="#450a0a" stroke="#dc2626" />
-            <text x="72.5" y="38" fill="#fee2e2" fontSize="3.5" fontWeight="bold" textAnchor="middle">Redis</text>
-            <text x="72.5" y="44" fill="#f87171" fontSize="2.5" textAnchor="middle">Pub/Sub</text>
+            {/* Queue */}
+            <rect x="65" y="25" width="15" height="30" rx="4" fill="#1c1917" stroke="#a1a1aa" />
+            <text x="72.5" y="38" fill="#fee2e2" fontSize="3.5" fontWeight="bold" textAnchor="middle">Queue</text>
+            <text x="72.5" y="44" fill="#a1a1aa" fontSize="2.5" textAnchor="middle">Workers</text>
 
             {/* ML Consumer */}
             <circle cx="88" cy="40" r="5" fill="#064e3b" stroke="#10b981" />
             <text x="88" y="41" fill="#a7f3d0" fontSize="3" fontWeight="bold" textAnchor="middle">ML</text>
           </svg>
           <div className="absolute top-3 right-3 text-[10px] font-mono text-muted-foreground flex items-center gap-1.5 bg-card/60 px-2 py-1 rounded border border-border">
-            <Cpu className="w-3 h-3 text-rose-400" /> Real-time Pub/Sub
+            <Cpu className="w-3 h-3 text-rose-400" /> Real-time Pipelines
           </div>
         </div>
       ),
@@ -306,13 +259,13 @@ export default function Projects() {
     {
       title: "Authentication & Authorization Service",
       desc: "A centralized identity provider that manages secure user credentials, OAuth2 client scopes, and JWT token signatures.",
-      tags: ["NestJS", "PostgreSQL", "Redis", "Swagger", "Docker"],
+      tags: ["Laravel", "PHP", "PostgreSQL", "Swagger", "Docker"],
       features: [
         "Centralized authentication mechanism using OAuth2.0 and OpenID Connect (OIDC) protocols.",
         "Asymmetric JWT token signatures using RSA private/public keys, fully scoped per client.",
-        "Token blacklisting configured using Redis to handle prompt logout commands.",
+        "Token blacklisting configured using database token tracking to handle prompt logout commands.",
       ],
-      github: "https://github.com/Mohammed-Fares/auth-service",
+      github: "https://github.com/mohammeddev-lab/auth-service",
       docs: "https://mohammedfares.dev/docs/auth-service",
       diagram: (
         <div className="w-full h-full min-h-[200px] flex items-center justify-center bg-zinc-950/40 rounded-xl border border-border/80 p-6 relative overflow-hidden group">

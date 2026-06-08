@@ -16,7 +16,7 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   title: "Mohammed Fares | Backend Developer & API Architect",
-  description: "Senior Backend Developer and API Architect specializing in building scalable backend systems, microservices, NestJS, Laravel, cloud infrastructure, and database optimization.",
+  description: "Senior Backend Developer and API Architect specializing in building scalable backend systems, microservices, Laravel, PHP, Docker, and database optimization.",
   keywords: [
     "Backend Developer",
     "API Architect",
@@ -24,10 +24,7 @@ export const metadata: Metadata = {
     "Mohammed Fares",
     "Laravel",
     "PHP",
-    "NodeJS",
-    "NestJS",
     "Docker",
-    "AWS",
     "PostgreSQL",
     "Microservices"
   ],

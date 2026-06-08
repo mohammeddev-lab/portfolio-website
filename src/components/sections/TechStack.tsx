@@ -30,6 +30,11 @@ const Icons = {
       <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm-1.5 17.2h-1.8V6.8h1.8v10.4zm5.4-3.6H13v-1.8h2.9v1.8z"/>
     </svg>
   ),
+  javascript: (
+    <svg viewBox="0 0 24 24" className="w-8 h-8 md:w-10 md:h-10 text-yellow-500 fill-current" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0V0zm22.034 18.376c-.186-.77-.79-1.282-1.64-1.282-.98 0-1.558.55-1.558 1.514 0 .93.545 1.5 1.5 1.5.86 0 1.4-.46 1.62-1.12l1.68.93c-.477.96-1.54 1.72-3.26 1.72-2.22 0-3.58-1.5-3.58-3.53 0-2.08 1.4-3.62 3.7-3.62 2.18 0 3.32 1.34 3.52 2.78l-1.92.11zm-8.004-.07c0 .87.42 1.35 1.09 1.35.66 0 1.07-.48 1.07-1.35V13.8h1.96v4.36c0 2.27-1.37 3.55-3.1 3.55-1.74 0-3.02-1.28-3.02-3.55v-4.36h1.96v4.36v-.01z"/>
+    </svg>
+  ),
   mysql: (
     <svg viewBox="0 0 24 24" className="w-8 h-8 md:w-10 md:h-10 text-blue-600 fill-current" xmlns="http://www.w3.org/2000/svg">
       <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17h-1.5v-10h1.5v10zm3.5-3.5c0 1.93-1.57 3.5-3.5 3.5h-1v-7h1c1.93 0 3.5 1.57 3.5 3.5v0zm3.5 3.5h-1.5v-10h1.5v10z"/>
@@ -128,6 +133,13 @@ export default function TechStack() {
         { icon: Icons.github, name: "GitHub" },
         { icon: Icons.postman, name: "Postman" },
         { icon: Icons.swagger, name: "Swagger" },
+      ],
+    },
+    {
+      category: "Familiar & Learning (Beginner)",
+      items: [
+        { icon: Icons.javascript, name: "JavaScript" },
+        { icon: Icons.expressjs, name: "Express.js" },
       ],
     },
   ];

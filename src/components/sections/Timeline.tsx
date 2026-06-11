@@ -13,33 +13,33 @@ interface TimelineItem {
 export default function Timeline() {
   const experiences: TimelineItem[] = [
     {
-      role: "Senior Backend Engineer",
+      role: "Frontend Developer",
+      company: "Softy",
+      period: "2025 - 2026",
+      bullets: [
+        "Collaborated closely with cross-functional development teams and project stakeholders to gather requirements and translate business workflows into interactive web applications.",
+        "Designed and implemented responsive, highly performant, and clean user interfaces using modern frontend technologies and design systems.",
+        "Integrated secure backend APIs and optimized state management to ensure seamless, real-time data flow across application modules.",
+      ],
+    },
+    {
+      role: "Software Engineer",
       company: "StadiumBooking & Sports Inc.",
       period: "Aug 2024 - Present",
       bullets: [
-        "Architected high-performance transactional seat booking services, reducing seat lock timeouts to sub-200ms.",
-        "Engineered database pessimistic locks and custom queuing mechanisms to completely prevent ticket overbooking.",
-        "Implemented multi-tenant resource isolation schemas dynamically resolved by HTTP routing middleware.",
+        "Led full-stack development of a seat reservation platform — from requirements gathering to database architecture, API design, and responsive frontend interfaces.",
+        "Redefined dashboard analytics to track users actively browsing and booking specific facilities, improving actionable insight accuracy.",
+        "Configured all financial values to display in Iraqi Dinar (ع.د) with proper Arabic localization.",
       ],
     },
     {
-      role: "Backend Engineer",
+      role: "Software Engineer",
       company: "DevCore Systems",
       period: "Jan 2022 - July 2024",
       bullets: [
-        "Designed and maintained REST and WebSocket APIs in Laravel and PHP.",
+        "Designed and developed full-stack web applications using Laravel, PHP, React, and Tailwind CSS.",
+        "Built RESTful APIs with comprehensive Swagger documentation and integrated frontend consumption layers.",
         "Tuned database queries and normalizations in PostgreSQL, achieving a 35% speedup in reports queries.",
-        "Configured Nginx reverse proxy routing and containerized application hosts using Docker.",
-      ],
-    },
-    {
-      role: "Junior Systems Developer",
-      company: "TechBase Org",
-      period: "Jun 2020 - Dec 2021",
-      bullets: [
-        "Maintained Linux servers and resolved network routing configurations.",
-        "Designed local CI/CD scripts and automated code linting/testing suites.",
-        "Built internal metrics dashboards and integrated third-party database logs.",
       ],
     },
   ];
@@ -62,7 +62,7 @@ export default function Timeline() {
             Work <br /> Experience
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl text-justify cursor-target">
-            A chronological timeline of my backend engineering career, demonstrating systems scaling, transactional safety, and infrastructure orchestration.
+            A chronological timeline of my software engineering career, demonstrating end-to-end project delivery from requirements to deployment.
           </p>
         </div>
       </div>

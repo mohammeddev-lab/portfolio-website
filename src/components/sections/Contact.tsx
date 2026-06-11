@@ -99,7 +99,7 @@ export default function Contact() {
             Let&apos;s Work <br /> Together
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl text-justify cursor-target">
-            I am available for senior backend roles, microservices architecture designs, or performance consulting contracts. Reach out if you want to scale your platform.
+            I am available for Software Engineer roles, full-stack projects, and collaborative engineering opportunities. Reach out if you want to build something meaningful together.
           </p>
         </div>
       </div>
@@ -224,7 +224,7 @@ export default function Contact() {
                 rows={5}
                 value={formState.message}
                 onChange={handleChange}
-                placeholder="Let's build something scalable..."
+                placeholder="Let's build something great..."
                 className="w-full bg-card/40 border border-border rounded-xl px-4 py-3 text-sm text-foreground placeholder-muted-foreground/50 focus:outline-none focus:border-foreground/30 focus:ring-1 focus:ring-foreground/20 transition-all font-sans resize-none"
               />
             </div>

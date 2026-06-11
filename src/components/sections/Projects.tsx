@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FileText, Database, GitBranch, Cpu, Lock } from "lucide-react";
+import { FileText, Database, GitBranch, Cpu, Lock, Layout } from "lucide-react";
 
 const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -33,12 +33,13 @@ export default function Projects() {
   const projects: ProjectItem[] = [
     {
       title: "Continuous Education Center Management System",
-      desc: "A Graduation Project - a full-scale digital transformation platform developed for Continuous Education Centers to automate course management, trainee enrollment, nomination workflows, and administrative operations, integrated with an AI-powered assistant.",
-      tags: ["Laravel", "PHP", "JWT", "MySQL", "OpenAI"],
+      desc: "A Graduation Project — a full-scale management system for a Continuing Education Center. I led the requirements gathering process through direct client sessions, designed the database architecture, and built the Laravel backend with a responsive React.js frontend styled in Tailwind CSS.",
+      tags: ["React.js", "Tailwind CSS", "HTML5", "Laravel", "PHP", "MySQL", "OpenAI"],
       features: [
-        "Secure Authentication, Role-Based Access Control, and dynamic Nomination Workflow scopes.",
-        "Automated attendance tracking, certificate generation, notifications system, and financial reporting.",
-        "Integrated conversational AI Assistant providing contextual user guidance, intelligent data analysis, and administrative recommendations."
+        "Led requirements gathering through direct client meetings, translating operational workflows into structured functional requirements.",
+        "Designed the relational database schema from the ground up before implementing backend logic — mapping entities, relationships, and constraints.",
+        "Built a responsive React.js frontend with Tailwind CSS for trainee management, course scheduling, and administrative dashboards.",
+        "Integrated secure authentication, role-based access control, automated attendance tracking, certificate generation, and financial reporting.",
       ],
       github: "https://github.com/mohammeddev-lab/cec-management-system",
       docs: "https://mohammedfares.dev/docs/cec-management-system",
@@ -95,12 +96,13 @@ export default function Projects() {
     },
     {
       title: "Stadium Booking Platform",
-      desc: "A high-concurrency seat reservation system built to manage heavy transactional spikes during ticket releases, ensuring zero double-bookings.",
-      tags: ["Laravel", "PHP", "PostgreSQL", "Docker", "Nginx"],
+      desc: "A full-stack seat reservation application featuring a Flutter-based mobile interface and a backend focused on high-concurrency engineering. I redesigned a core dashboard metric to track users actively browsing and booking specific facilities rather than generic active users.",
+      tags: ["Flutter", "Dart", "Laravel", "PHP", "PostgreSQL", "Docker", "Nginx"],
       features: [
+        "Redefined the dashboard analytics to measure users browsing and booking a specific facility — not just generic active users.",
         "Distributed lock mechanism with database pessimistic locking to prevent race conditions during seat selection.",
-        "DB transaction isolation (Serializable) to guarantee data integrity.",
-        "Load tested to scale smoothly up to 15,000 requests/sec with minimal response latencies.",
+        "DB transaction isolation (Serializable) to guarantee data integrity under concurrent booking loads.",
+        "Built a high-performance mobile application using Flutter and Dart, featuring real-time seat availability and instant status indicators.",
       ],
       github: "https://github.com/mohammeddev-lab/stadium-booking",
       docs: "https://mohammedfares.dev/docs/stadium-booking",
@@ -154,12 +156,13 @@ export default function Projects() {
     },
     {
       title: "Sports Management SaaS",
-      desc: "A modular multi-tenant backend that coordinates leagues, schedules matches, and isolates tenant resources safely.",
-      tags: ["Laravel", "PHP", "MySQL", "Docker", "Nginx"],
+      desc: "A modular multi-tenant application that coordinates leagues, schedules matches, and isolates tenant resources safely. Built as a full-stack system with a clean frontend dashboard for managing tenants, leagues, and match schedules.",
+      tags: ["Laravel", "PHP", "MySQL", "HTML5", "CSS3", "JavaScript", "Docker", "Nginx"],
       features: [
         "Database multi-tenancy model using single database with dynamic tenant scoped middleware.",
         "Match scheduling calculation engine using custom graph traversal pathing algorithms.",
         "Role-Based Access Control (RBAC) supporting complex manager, coach, and athlete scopes.",
+        "Responsive frontend dashboard for league management, match scheduling, and tenant administration.",
       ],
       github: "https://github.com/mohammeddev-lab/sports-management-saas",
       diagram: (
@@ -207,12 +210,13 @@ export default function Projects() {
 
     {
       title: "Stress Detection Backend API",
-      desc: "A real-time analytics backend that consumes biometric telemetry data and evaluates physiological stress states.",
-      tags: ["Laravel", "PHP", "MySQL", "Linux", "Swagger"],
+      desc: "A full-stack real-time analytics system that consumes biometric telemetry data and evaluates physiological stress states, with a Flutter-based mobile interface for monitoring live data streams.",
+      tags: ["Flutter", "Dart", "Laravel", "PHP", "MySQL", "Linux", "Swagger"],
       features: [
         "WebSocket server gateway managing persistent connections and real-time telemetry streaming.",
         "Integrated pipeline and worker queue that pipes telemetry data to background ML analysis scripts.",
-        "Guaranteed message throughput exceeding 200,000 telemetry packets per minute.",
+        "Developed a cross-platform mobile monitoring dashboard using Flutter and Dart to display live telemetry status and stress state indicators.",
+        "Comprehensive Swagger/OpenAPI documentation for all API endpoints.",
       ],
       github: "https://github.com/mohammeddev-lab/stress-detection-api",
       diagram: (
@@ -257,49 +261,183 @@ export default function Projects() {
       ),
     },
     {
-      title: "Authentication & Authorization Service",
-      desc: "A centralized identity provider that manages secure user credentials, OAuth2 client scopes, and JWT token signatures.",
-      tags: ["Laravel", "PHP", "PostgreSQL", "Swagger", "Docker"],
+      title: "Academy (أكاديمتي)",
+      desc: "A complete management interface for a Continuing Education Center, built with HTML, CSS, and JavaScript. Handles trainee enrollment, trainer management, course scheduling, registrations, payments, certificates, and reporting — all through a responsive frontend interface.",
+      tags: ["HTML5", "CSS3", "JavaScript"],
       features: [
-        "Centralized authentication mechanism using OAuth2.0 and OpenID Connect (OIDC) protocols.",
-        "Asymmetric JWT token signatures using RSA private/public keys, fully scoped per client.",
-        "Token blacklisting configured using database token tracking to handle prompt logout commands.",
+        "Built a responsive multi-page interface for managing trainees, trainers, courses, and enrollment workflows.",
+        "Designed data-driven views for payments, certificates, and administrative reporting dashboards.",
+        "Implemented interactive forms and dynamic content updates using vanilla JavaScript.",
+        "Ensured cross-device compatibility with mobile-first responsive CSS layouts.",
       ],
-      github: "https://github.com/mohammeddev-lab/auth-service",
-      docs: "https://mohammedfares.dev/docs/auth-service",
+      github: "https://github.com/mohammeddev-lab/accademy",
       diagram: (
         <div className="w-full h-full min-h-[200px] flex items-center justify-center bg-zinc-950/40 rounded-xl border border-border/80 p-6 relative overflow-hidden group">
-          {/* OAuth JWT diagram */}
           <svg className="w-full h-full max-w-[280px]" viewBox="0 0 100 80" fill="none">
-            {/* Paths */}
             <motion.path d="M10 40h20" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
-            <motion.path d="M50 30h15" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
-            <motion.path d="M50 50h15" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
+            <motion.path d="M50 40h20" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
 
-            <motion.circle r="1.5" fill="#a855f7"
+            <motion.circle r="1.2" fill="#f59e0b"
               animate={{ cx: [10, 30], cy: [40, 40] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
+            />
+
+            <rect x="5" y="30" width="10" height="20" rx="3" fill="#18181b" stroke="rgba(255,255,255,0.1)" />
+            <text x="10" y="42" fill="#a1a1aa" fontSize="3" textAnchor="middle">User</text>
+
+            <rect x="30" y="22" width="20" height="36" rx="4" fill="#0f172a" stroke="#f59e0b" />
+            <text x="40" y="34" fill="#fef3c7" fontSize="3.5" fontWeight="bold" textAnchor="middle">HTML5</text>
+            <text x="40" y="41" fill="#fbbf24" fontSize="3" textAnchor="middle">CSS3</text>
+            <text x="40" y="48" fill="#f59e0b" fontSize="3" textAnchor="middle">JS</text>
+
+            <rect x="65" y="30" width="22" height="20" rx="4" fill="#1c1917" stroke="#a1a1aa" />
+            <text x="76" y="39" fill="#f5f5f7" fontSize="3" fontWeight="bold" textAnchor="middle">Academy</text>
+            <text x="76" y="45" fill="#a1a1aa" fontSize="2.5" textAnchor="middle">Management</text>
+          </svg>
+          <div className="absolute top-3 right-3 text-[9px] font-mono text-muted-foreground flex items-center gap-1 bg-card/60 px-2 py-1 rounded border border-border">
+            <Layout className="w-3 h-3 text-amber-400" /> Responsive UI
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "SmartShuttleUoM — Real-Time Shuttle Tracking",
+      desc: "A real-time shuttle bus management platform for the University of Mosul, built with React, TypeScript, and Tailwind CSS. Features a live map interface, operations dashboard, and ETA forecasting — all with full RTL Arabic support.",
+      tags: ["React", "TypeScript", "Tailwind CSS", "shadcn/ui", "Recharts", "Leaflet", "SSE"],
+      features: [
+        "Built a real-time interactive map using Leaflet.js with OpenStreetMap tiles for live bus position tracking.",
+        "Designed a responsive operations dashboard with Recharts data visualizations for dispatch optimization.",
+        "Consumed Server-Sent Events (SSE) endpoints for live data streaming with a polling fallback strategy.",
+        "Implemented a fully RTL Arabic interface with Cairo as the default font, ensuring proper layout for Arabic-speaking users.",
+      ],
+      github: "https://github.com/mohammeddev-lab/SmartShuttleUoM",
+      diagram: (
+        <div className="w-full h-full min-h-[200px] flex items-center justify-center bg-zinc-950/40 rounded-xl border border-border/80 p-6 relative overflow-hidden group">
+          <svg className="w-full h-full max-w-[280px]" viewBox="0 0 100 80" fill="none">
+            <motion.path d="M10 40h20" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
+            <motion.path d="M50 30h20" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
+            <motion.path d="M50 50h20" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
+
+            <motion.circle r="1.2" fill="#38bdf8"
+              animate={{ cx: [10, 30], cy: [40, 40] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
+            />
+            <motion.circle r="1.2" fill="#10b981"
+              animate={{ cx: [50, 70], cy: [30, 30] }}
+              transition={{ repeat: Infinity, duration: 1.8, ease: "linear" }}
+            />
+            <motion.circle r="1.2" fill="#f59e0b"
+              animate={{ cx: [50, 70], cy: [50, 50] }}
+              transition={{ repeat: Infinity, duration: 2.2, ease: "linear" }}
+            />
+
+            <rect x="5" y="30" width="10" height="20" rx="3" fill="#18181b" stroke="rgba(255,255,255,0.1)" />
+            <text x="10" y="42" fill="#a1a1aa" fontSize="3" textAnchor="middle">Client</text>
+
+            <rect x="30" y="20" width="20" height="40" rx="4" fill="#0f172a" stroke="#38bdf8" />
+            <text x="40" y="36" fill="#e0f2fe" fontSize="4" fontWeight="bold" textAnchor="middle">React</text>
+            <text x="40" y="44" fill="#7dd3fc" fontSize="2.5" textAnchor="middle">TypeScript</text>
+            <text x="40" y="50" fill="#38bdf8" fontSize="2.5" textAnchor="middle">Tailwind</text>
+
+            <rect x="65" y="10" width="22" height="18" rx="4" fill="#064e3b" stroke="#10b981" />
+            <text x="76" y="19" fill="#ecfdf5" fontSize="3" fontWeight="bold" textAnchor="middle">Leaflet</text>
+            <text x="76" y="25" fill="#a7f3d0" fontSize="2.5" textAnchor="middle">Live Map</text>
+
+            <rect x="65" y="38" width="22" height="18" rx="4" fill="#1c1917" stroke="#f59e0b" />
+            <text x="76" y="47" fill="#fef3c7" fontSize="3" fontWeight="bold" textAnchor="middle">Recharts</text>
+            <text x="76" y="53" fill="#fbbf24" fontSize="2.5" textAnchor="middle">Dashboard</text>
+          </svg>
+          <div className="absolute top-3 right-3 text-[9px] font-mono text-muted-foreground flex items-center gap-1 bg-card/60 px-2 py-1 rounded border border-border">
+            <Layout className="w-3 h-3 text-sky-400" /> Full RTL Support
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Investor Notebook v2 — Investment Organizer",
+      desc: "A cross-platform mobile application built with Flutter and Dart for organizing investments, tracking notes, and managing investment records — featuring a custom notebook-inspired UI design system with full RTL Arabic support.",
+      tags: ["Flutter", "Dart", "SQLite", "REST API"],
+      features: [
+        "Designed a custom notebook-inspired UI with a cohesive cream/brown color system for a distinctive visual identity.",
+        "Built a complete REST API integration layer with full CRUD operations for investment types and records.",
+        "Implemented advanced filtering and full-text search across all records by type, status, and keyword.",
+        "Delivered a fully responsive cross-platform layout with proper RTL support across mobile and tablet devices.",
+      ],
+      github: "https://github.com/mohammeddev-lab/investor-notebookv2",
+      diagram: (
+        <div className="w-full h-full min-h-[200px] flex items-center justify-center bg-zinc-950/40 rounded-xl border border-border/80 p-6 relative overflow-hidden group">
+          <svg className="w-full h-full max-w-[280px]" viewBox="0 0 100 80" fill="none">
+            <motion.path d="M10 40h20" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
+            <motion.path d="M50 35h20" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
+            <motion.path d="M50 50h20" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
+
+            <motion.circle r="1.2" fill="#f59e0b"
+              animate={{ cx: [10, 30], cy: [40, 40] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
+            />
+
+            <rect x="5" y="30" width="10" height="20" rx="3" fill="#18181b" stroke="rgba(255,255,255,0.1)" />
+            <text x="10" y="42" fill="#a1a1aa" fontSize="3" textAnchor="middle">User</text>
+
+            <rect x="30" y="20" width="20" height="40" rx="4" fill="#0f172a" stroke="#38bdf8" />
+            <text x="40" y="34" fill="#e0f2fe" fontSize="4" fontWeight="bold" textAnchor="middle">Flutter</text>
+            <text x="40" y="42" fill="#7dd3fc" fontSize="2.5" textAnchor="middle">Dart</text>
+            <text x="40" y="48" fill="#38bdf8" fontSize="2.5" textAnchor="middle">Mobile</text>
+
+            <rect x="65" y="15" width="22" height="18" rx="4" fill="#1c1917" stroke="#f59e0b" />
+            <text x="76" y="24" fill="#fef3c7" fontSize="3" fontWeight="bold" textAnchor="middle">RTL UI</text>
+            <text x="76" y="30" fill="#fbbf24" fontSize="2.5" textAnchor="middle">Notebook</text>
+
+            <rect x="65" y="45" width="22" height="16" rx="4" fill="#064e3b" stroke="#10b981" />
+            <text x="76" y="53" fill="#ecfdf5" fontSize="3" fontWeight="bold" textAnchor="middle">SQLite</text>
+            <text x="76" y="58" fill="#a7f3d0" fontSize="2.5" textAnchor="middle">Local DB</text>
+          </svg>
+          <div className="absolute top-3 right-3 text-[9px] font-mono text-muted-foreground flex items-center gap-1 bg-card/60 px-2 py-1 rounded border border-border">
+            <Layout className="w-3 h-3 text-amber-400" /> Cross-Platform
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Portfolio Website — Developer Showcase",
+      desc: "A personal portfolio website built with React, TypeScript, and Tailwind CSS — the very site you're viewing. Features animated backgrounds, smooth scroll navigation, and a cinematic hero section.",
+      tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      features: [
+        "Built with React and TypeScript for type-safe, performant page rendering.",
+        "Designed a cinematic hero section with animated word rotation and concentric orbit background.",
+        "Implemented smooth scroll navigation between sections with a floating bubble menu.",
+        "Configured with ESLint, TypeScript, and Tailwind CSS for maintainable, production-ready code.",
+      ],
+      github: "https://github.com/mohammeddev-lab/portfolio-website",
+      diagram: (
+        <div className="w-full h-full min-h-[200px] flex items-center justify-center bg-zinc-950/40 rounded-xl border border-border/80 p-6 relative overflow-hidden group">
+          <svg className="w-full h-full max-w-[280px]" viewBox="0 0 100 80" fill="none">
+            <motion.path d="M10 40h20" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
+            <motion.path d="M50 40h20" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
+
+            <motion.circle r="1.2" fill="#a855f7"
+              animate={{ cx: [10, 30], cy: [40, 40] }}
+              transition={{ repeat: Infinity, duration: 1.8, ease: "linear" }}
+            />
+            <motion.circle r="1.2" fill="#38bdf8"
+              animate={{ cx: [50, 70], cy: [40, 40] }}
               transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
             />
 
             <rect x="5" y="30" width="10" height="20" rx="3" fill="#18181b" stroke="rgba(255,255,255,0.1)" />
-            <text x="10" y="42" fill="#a1a1aa" fontSize="4" textAnchor="middle">Client</text>
+            <text x="10" y="42" fill="#a1a1aa" fontSize="3" textAnchor="middle">User</text>
 
-            <rect x="30" y="25" width="20" height="30" rx="4" fill="#3b0764" stroke="#a855f7" />
-            <text x="40" y="38" fill="#f3e8ff" fontSize="4" fontWeight="bold" textAnchor="middle">Auth</text>
-            <text x="40" y="44" fill="#d8b4fe" fontSize="3" textAnchor="middle">Service</text>
+            <rect x="30" y="22" width="20" height="36" rx="4" fill="#0f172a" stroke="#38bdf8" />
+            <text x="40" y="36" fill="#e0f2fe" fontSize="4" fontWeight="bold" textAnchor="middle">React</text>
+            <text x="40" y="44" fill="#7dd3fc" fontSize="2.5" textAnchor="middle">TypeScript</text>
+            <text x="40" y="50" fill="#38bdf8" fontSize="2.5" textAnchor="middle">Tailwind CSS</text>
 
-            {/* Keys */}
-            <rect x="65" y="15" width="20" height="18" rx="4" fill="#0f172a" stroke="#3b82f6" />
-            <text x="75" y="23" fill="#dbeafe" fontSize="3" textAnchor="middle">RSA Key</text>
-            <text x="75" y="29" fill="#93c5fd" fontSize="2.5" textAnchor="middle">JWT Sign</text>
-
-            {/* DB */}
-            <rect x="65" y="47" width="20" height="18" rx="4" fill="#111827" stroke="#10b981" />
-            <text x="75" y="55" fill="#ecfdf5" fontSize="3" textAnchor="middle">Postgres</text>
-            <text x="75" y="61" fill="#34d399" fontSize="2.5" textAnchor="middle">Users</text>
+            <rect x="65" y="30" width="22" height="20" rx="4" fill="#1c1917" stroke="#a855f7" />
+            <text x="76" y="39" fill="#f3e8ff" fontSize="3" fontWeight="bold" textAnchor="middle">Vercel</text>
+            <text x="76" y="45" fill="#d8b4fe" fontSize="2.5" textAnchor="middle">Deploy</text>
           </svg>
-          <div className="absolute top-3 right-3 text-[10px] font-mono text-muted-foreground flex items-center gap-1.5 bg-card/60 px-2 py-1 rounded border border-border">
-            <Lock className="w-3 h-3 text-purple-400" /> RSA Signed JWT
+          <div className="absolute top-3 right-3 text-[9px] font-mono text-muted-foreground flex items-center gap-1 bg-card/60 px-2 py-1 rounded border border-border">
+            <Layout className="w-3 h-3 text-purple-400" /> Live Portfolio
           </div>
         </div>
       ),
@@ -351,7 +489,7 @@ export default function Projects() {
             Featured <br /> Projects
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl text-justify cursor-target">
-            A selective group of backend projects showcasing database isolation, concurrency locking patterns, asynchronous routing gateways, and microservice designs.
+            A curated selection of full-stack projects demonstrating end-to-end software engineering — from requirements gathering and database architecture to backend logic and polished frontend interfaces.
           </p>
         </div>
       </div>

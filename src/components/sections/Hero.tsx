@@ -170,14 +170,14 @@ export default function Hero() {
                 variants={wordVariants}
                 className="inline-block"
               >
-                BACKEND
+                SOFTWARE
               </motion.span>
             </span>
 
             {/* DEVELOPER */}
             <span className="inline-flex overflow-hidden py-2 text-muted-foreground">
               <WordRotator
-                words={["DEVELOPER", "ENGINEER", "ARCHITECT", "BUILDER"]}
+                words={["ENGINEER", "DEVELOPER", "ARCHITECT", "BUILDER"]}
                 duration={2500}
                 className="inline-block"
               />
@@ -191,7 +191,7 @@ export default function Hero() {
           variants={itemVariants}
           className="text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl cursor-target mt-2 px-4"
         >
-          I build scalable backend systems, REST APIs, microservices, and cloud-native applications focused on performance, security, and reliability.
+          I build end-to-end solutions — from system architecture and database design to polished, performant user interfaces. Software Engineering is not just my title, it&apos;s how I think.
         </motion.p>
 
         {/* Action Buttons */}

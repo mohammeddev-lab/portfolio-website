@@ -15,23 +15,24 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mohammed Fares | Backend Developer & API Architect",
-  description: "Senior Backend Developer and API Architect specializing in building scalable backend systems, microservices, Laravel, PHP, Docker, and database optimization.",
+  title: "Mohammed Fares | Software Engineer",
+  description: "Software Engineer with a strong command of the full SDLC — from requirements gathering and database architecture to backend development and frontend implementation.",
   keywords: [
+    "Software Engineer",
+    "Full-Stack Developer",
+    "Frontend Developer",
     "Backend Developer",
-    "API Architect",
-    "System Designer",
     "Mohammed Fares",
     "Laravel",
+    "React",
+    "TypeScript",
     "PHP",
-    "Docker",
-    "PostgreSQL",
-    "Microservices"
+    "Python"
   ],
   authors: [{ name: "Mohammed Fares" }],
   openGraph: {
-    title: "Mohammed Fares | Backend Developer & API Architect",
-    description: "I build scalable backend systems, REST APIs, microservices, and cloud-native applications focused on performance, security, and reliability.",
+    title: "Mohammed Fares | Software Engineer",
+    description: "I build end-to-end solutions — from system architecture and database design to polished, performant user interfaces.",
     url: "https://mohammedfares.dev",
     siteName: "Mohammed Fares Portfolio",
     locale: "en_US",

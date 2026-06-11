@@ -15,26 +15,26 @@ export default function Services() {
     {
       num: "01",
       icon: <Code2 className="w-10 h-10 text-indigo-500" />,
-      title: "API Engineering & Integration",
-      desc: "Creating secure, rate-limited RESTful APIs using Laravel and PHP, fully documented with Swagger for seamless client consumption.",
+      title: "Full-Stack Web Development",
+      desc: "Building end-to-end web applications with Laravel and React — from designing RESTful APIs and database schemas to crafting responsive frontend interfaces with TypeScript and Tailwind CSS.",
     },
     {
       num: "02",
       icon: <Cpu className="w-10 h-10 text-emerald-500" />,
-      title: "Microservices & System Design",
-      desc: "Architecting decoupled systems using message brokers (RabbitMQ) and event-driven patterns to guarantee reliable async processing.",
+      title: "System Analysis & Architecture",
+      desc: "Gathering client requirements, analyzing business workflows, and designing system architectures — database schemas, API contracts, and component structures — before writing production code.",
     },
     {
       num: "03",
       icon: <Zap className="w-10 h-10 text-sky-500" />,
-      title: "Database Performance Tuning",
-      desc: "Analyzing SQL queries, refining indexing strategies, setting up replicas, and configuring caching systems to achieve sub-millisecond latencies.",
+      title: "Frontend UI & Responsive Design",
+      desc: "Crafting responsive, accessible user interfaces using React, TypeScript, and Tailwind CSS — with attention to RTL layouts, data visualization, and seamless API integration.",
     },
     {
       num: "04",
       icon: <Settings className="w-10 h-10 text-orange-500" />,
-      title: "DevOps & Cloud Orchestration",
-      desc: "Dockerizing environments, automating deployments via CI/CD, configuring Nginx proxies, and provisioning VPS and cloud hosting servers.",
+      title: "DevOps & Deployment",
+      desc: "Dockerizing environments, automating deployments via CI/CD, configuring Nginx, and deploying production applications to Vercel and cloud hosting platforms.",
     },
   ];
 
@@ -63,7 +63,7 @@ export default function Services() {
             What I <br /> Offer
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl text-justify cursor-target">
-            I design and build robust backend systems, optimized database models, and cloud-native hosting environments. My focus is on writing clean, scalable code that optimizes resources and guarantees reliability under heavy traffic load.
+            I design and build complete software systems — from understanding client requirements and modeling databases to developing backend APIs and crafting polished frontend interfaces. My focus is on writing clean, maintainable code that serves both the user and the business.
           </p>
         </div>
       </div>
